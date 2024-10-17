@@ -3,7 +3,7 @@ import { saveTodos, loadTodos } from "../utils/fileHandler.js"
 import { v4 as uuid4 } from "uuid"
 import chalk from "chalk";
 
-export const addTodo = async () => {
+export const addTodo = async () => { // 다른 모듈에서 사용할 수 있도록 내보내도록 수정
   const answers = await inquirer.prompt([
     {
       type: "input",

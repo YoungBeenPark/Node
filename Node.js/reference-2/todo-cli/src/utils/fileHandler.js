@@ -8,10 +8,6 @@ const __dirname = path.dirname(__filename);
 // DB (file, local)
 const filePath = path.join(__dirname, "../../data/todos.json");
 
-/**
- * 할 일 데이터를 로드합니다.
- * @returns {Promise<Array>} 할 일 목록
- */
 async function loadTodos() {
   try {
     const exists = await fs.pathExists(filePath);
@@ -28,10 +24,6 @@ async function loadTodos() {
   }
 }
 
-/**
- * 할 일 데이터를 저장합니다.
- * @param {Array} todos 할 일 목록
- */
 async function saveTodos(todos) {
   try {
     await fs.writeJSON(filePath, todos, { spaces: 2 });

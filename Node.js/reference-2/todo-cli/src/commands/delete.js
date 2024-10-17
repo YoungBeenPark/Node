@@ -13,6 +13,7 @@ async function deleteTodo() {
 
   const choices = todos.map((todo, index) => ({
     name: `${todo.title} (${todo.completed ? "완료" : "미완료"})`,
+    value: todo.id,
   }));
 
   const answers = await inquirer.prompt([

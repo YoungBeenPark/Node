@@ -4,7 +4,7 @@ import { addTodo } from "./commands/add.js";
 import { listTodos } from "./commands/list.js";
 import { deleteTodo } from "./commands/delete.js";
 import { completeTodo } from "./commands/complete.js";
-import { searchTodo } from "./commands/search.js";
+import  searchTodo  from "./commands/search.js";
 
 async function main() {
   const { action } = await inquirer.prompt([

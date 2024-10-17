@@ -3,9 +3,9 @@ import { loadTodos } from '../utils/fileHandler.js';
 import { displayTodos } from '../utils/formatter.js';
 import _ from 'lodash';
 import chalk from 'chalk';
+// 추가된 부분
 
-
-export const searchTodo = async () => { // async 키워드 추가
+async function searchTodo() {
   const todos = await loadTodos();
 
   if (todos.length === 0) {
@@ -34,3 +34,6 @@ export const searchTodo = async () => { // async 키워드 추가
     displayTodos(filteredTodos);
   }
 };
+
+// module.exports = searchTodo;
+export default searchTodo;

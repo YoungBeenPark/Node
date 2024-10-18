@@ -1,0 +1,32 @@
+{
+  "name": "todo-cli",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "개인 할 일 관리 CLI 애플리케이션",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "add": "^2.0.6",
+    "chalk": "^4.1.2",
+    "complete": "^0.4.4",
+    "delete": "^1.1.0",
+    "fs": "^0.0.1-security",
+    "fs-extra": "^10.0.0",
+    "index": "^0.4.0",
+    "inquirer": "^8.2.0",
+    "list": "^2.0.19",
+    "lodash": "^4.17.21",
+    "path": "^0.12.7",
+    "require": "^2.4.20",
+    "search": "^1.0.0",
+    "throw": "^1.1.1",
+    "todo": "^1.1.0",
+    "uuid": "^8.3.2"
+  }
+}

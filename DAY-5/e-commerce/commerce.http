@@ -1,0 +1,30 @@
+POST http://localhost:2000/orders
+Content-Type: application/json
+
+[
+    {
+        "productId": 2,
+        "quantity": 11,
+        "user": "아무개2"
+    },
+    {
+        "productId": 3,
+        "quantity": 25,
+        "user": "아무개3"
+    },
+    {
+        "productId": 4,
+        "quantity": 8,
+        "user": "아무개4"
+    },
+    {
+        "productId": 5,
+        "quantity": 31,
+        "user": "아무개5"
+    },
+    {
+        "productId": 6,
+        "quantity": 13,
+        "user": "아무개6"
+    }
+]
